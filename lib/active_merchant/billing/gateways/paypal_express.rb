@@ -137,6 +137,7 @@ module ActiveMerchant #:nodoc:
               xml.tag! 'n2:cpp-header-border-color', options[:header_border_color] unless options[:header_border_color].blank?
               xml.tag! 'n2:cpp-header-back-color', options[:header_background_color] unless options[:header_background_color].blank?
               xml.tag! 'n2:cpp-payflow-color', options[:background_color] unless options[:background_color].blank?
+              xml.tag! 'n2:cpp-logo-image', options[:logo_image] unless options[:logo_image].blank?
               if options[:allow_guest_checkout]
                 xml.tag! 'n2:SolutionType', 'Sole'
                 xml.tag! 'n2:LandingPage', options[:landing_page] || 'Billing'

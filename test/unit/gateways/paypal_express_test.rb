@@ -554,6 +554,7 @@ class PaypalExpressTest < Test::Unit::TestCase
         :header_background_color => 'CAFE00',
         :header_border_color => 'CAFE00',
         :background_color => 'CAFE00',
+        :logo_image => 'https://example.com/my_business',
         :email => 'joe@example.com',
         :billing_agreement => {:type => 'MerchantInitiatedBilling', :description => '9.99 per month for a year'},
         :allow_note => true,
